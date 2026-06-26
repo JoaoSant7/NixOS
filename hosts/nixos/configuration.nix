@@ -108,10 +108,12 @@ hardware.nvidia = {
     ];
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
+  # Enable programs.
   programs.zsh.enable = true;
+  programs.neovim.enable = true;
+  programs.bat.enable = true;
+  programs.fzf.keybindings = true;
+
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -120,7 +122,6 @@ hardware.nvidia = {
   # $ nix search wget
   environment.systemPackages = with pkgs; [
   atuin
-  bat
   brave
   distrobox
   eza
@@ -140,7 +141,6 @@ hardware.nvidia = {
   libgcc
   lua
   lua-language-server
-  neovim
   nerd-fonts.jetbrains-mono
   poppler
   prettier
@@ -160,7 +160,6 @@ hardware.nvidia = {
   xclip
   yazi
   zoxide
-  zsh
 ];
 
   # Some programs need SUID wrappers, can be configured further or are
