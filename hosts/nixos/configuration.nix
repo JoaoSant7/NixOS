@@ -39,7 +39,7 @@
     LC_NUMERIC = "pt_BR.UTF-8";
     LC_PAPER = "pt_BR.UTF-8";
     LC_TELEPHONE = "pt_BR.UTF-8";
-    LC_TIME = "pt_BR.UTF-8";
+    LC_TIME = "en_US.UTF-8";
   };
 
 
@@ -56,13 +56,13 @@ hardware.nvidia = {
   open = true;
   modesetting.enable = true;
   nvidiaSettings = true;
-
   branch = "stable";
-
   powerManagement.enable = true;   # Enable NVIDIA suspend/resume services
   powerManagement.finegrained = false;
 };
 
+  # Enable flakes.
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
@@ -113,7 +113,7 @@ hardware.nvidia = {
   programs.neovim.enable = true;
   programs.bat.enable = true;
   programs.fzf.keybindings = true;
-
+  programs.kdeconnect.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -135,8 +135,6 @@ hardware.nvidia = {
   htop
   imagemagick
   jq
-  kdePackages.kdeconnect-kde
-  kdePackages.plasma-login-manager
   lazygit
   libgcc
   lua
@@ -173,7 +171,7 @@ hardware.nvidia = {
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
