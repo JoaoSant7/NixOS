@@ -6,12 +6,24 @@
   };
 
   outputs = { self, nixpkgs, ... }: {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
+    nixosConfigurations = {
 
-      modules = [
-        ./hosts/nixos/configuration.nix
-      ];
+      nixos = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+
+        modules = [
+          ./hosts/nixos/configuration.nix
+        ];
+      };
+
+      hyprnix = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+
+        modules = [
+          ./hosts/hyprnix/configuration.nix
+        ];
+      };
+
     };
   };
 }
