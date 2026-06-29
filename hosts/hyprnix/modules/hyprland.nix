@@ -4,10 +4,29 @@
   # Enable SDDM.
   services.displayManager.sddm = {
     enable = true;
+    wayland.enable = true;
   };
 
-  # Enable Hyprland.
-  programs.hyprland.enable = true;
+  # Enable Hyprland with UWSM for proper session registration.
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true;
+    xwayland.enable = true;
+  };
+
+  # Enable UWSM.
+  programs.uwsm = {
+    enable = true;
+
+    # Uncomment this if you need a custom compositor entry.
+    # waylandCompositors = {
+    #   hyprland = {
+    #     prettyName = "Hyprland";
+    #     comment = "Hyprland compositor managed by UWSM";
+    #     binPath = "/run/current-system/sw/bin/uwsm-start-hyprland";
+    #   };
+    # };
+  };
 
   # Hint Electron apps to use Wayland.
   environment.sessionVariables.NIXOS_OZONE_WL = "1";

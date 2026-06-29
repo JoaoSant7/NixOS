@@ -2,13 +2,15 @@
   description = "Backup NixOS";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+  nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
 
-    noctalia = {
-      url = "github:noctalia-dev/noctalia/legacy-v4";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
+  nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+  noctalia = {
+    url = "github:noctalia-dev/noctalia/legacy-v4";
+    inputs.nixpkgs.follows = "nixpkgs-unstable";
   };
+};
 
   outputs = inputs@{ self, nixpkgs, noctalia, ... }: {
     nixosConfigurations = {
@@ -28,6 +30,7 @@
 
         modules = [
           ./hosts/hyprnix/configuration.nix
+          { nixpkgs.overlays = [ noctalia.overlays.default ]; }
         ];
       };
 

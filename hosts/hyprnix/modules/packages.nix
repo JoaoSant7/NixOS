@@ -18,6 +18,7 @@
     htop
     imagemagick
     jq
+    kitty
     lazygit
     libgcc
     lua
@@ -36,6 +37,7 @@
     tree-sitter
     unzip
     vlc
+    wlsunset
     wget
     wl-clipboard
     xclip
