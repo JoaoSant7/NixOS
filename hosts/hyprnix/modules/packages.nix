@@ -23,6 +23,9 @@
     imagemagick
     jq
     kdePackages.ark
+    kdePackages.qt6ct
+    kdePackages.breeze-icons
+    kdePackages.dolphin
     kitty
     lazygit
     libgcc
@@ -36,7 +39,8 @@
     stow
     syncthing
     syncthingtray
-    nemo
+    noctalia-shell
+    nwg-look
     tealdeer
     tmux
     tree-sitter
