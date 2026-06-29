@@ -7,6 +7,7 @@
     ./modules/boot.nix
     ./modules/nvidia.nix
     ./modules/hyprland.nix
+    ./modules/noctalia.nix
     ./modules/audio.nix
     ./modules/networking.nix
     ./modules/users.nix

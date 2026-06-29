@@ -5,26 +5,19 @@
   services.displayManager.sddm = {
     enable = true;
   };
-  
-  # Enable noctalia.
-  programs.noctalia.enable = true; 
- 
-{
+
+  # Enable Hyprland.
   programs.hyprland.enable = true;
 
-  # Optional, but recommended
+  # Hint Electron apps to use Wayland.
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
-}
 
-  # Configure keymap in X11.
+  # Configure keymap.
   services.xserver.xkb = {
     layout = "us";
     variant = "altgr-intl";
   };
 
-  # Enable CUPS to print documents.
+  # Enable printing.
   services.printing.enable = true;
-
-
-  ];
 }
