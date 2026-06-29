@@ -7,6 +7,7 @@
     atuin
     brave
     distrobox
+    docker
     eza
     fastfetch
     fd
