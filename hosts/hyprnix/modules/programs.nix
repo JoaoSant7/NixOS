@@ -9,6 +9,9 @@
   programs.fzf.keybindings = true;
   programs.kdeconnect.enable = true;
 
+  # Docker virtualisation
+  virtualisation.docker.enable = true;
+
   programs.git = {
     enable = true;
 
