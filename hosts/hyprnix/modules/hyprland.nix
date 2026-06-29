@@ -35,12 +35,24 @@
   # Hint Electron apps to use Wayland.
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  # Configure keymap.
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "altgr-intl";
-  };
+# Configure keymap.
+services.xserver.xkb = {
+  layout = "us";
+  variant = "intl"; 
+  options = "compose:ralt"; # Forcefully forces Right Alt to act as your Compose key
+};
 
-  # Enable printing.
+i18n.inputMethod = {
+  enable = true;
+  type = "fcitx5";
+  fcitx5 = {
+    waylandFrontend = true;
+    addons = with pkgs; [
+      fcitx5-gtk  # Crucial for Ghostty and GTK4 apps
+    ];
+  };
+};
+
+# Enable printing.
   services.printing.enable = true;
 }
