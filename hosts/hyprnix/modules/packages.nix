@@ -16,6 +16,9 @@
     gcc
     ghostty
     git
+    hyprcursor
+    hyprlock
+    hypridle
     htop
     imagemagick
     jq
