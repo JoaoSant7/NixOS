@@ -1,11 +1,28 @@
 { config, pkgs, lib, ... }:
 
+let
+  astronaut = pkgs.sddm-astronaut.override {
+    # Change this to another preset if you like.
+    embeddedTheme = "astronaut";
+  };
+in
 {
   # Enable SDDM.
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
+
+    theme = "sddm-astronaut-theme";
+
+    extraPackages = [
+      astronaut
+    ];
   };
+
+  # Make the theme available system-wide.
+  environment.systemPackages = [
+    astronaut
+  ];
 
   # Enable Hyprland with UWSM for proper session registration.
   programs.hyprland = {
@@ -29,30 +46,29 @@
   };
 
   environment.sessionVariables = {
-  QT_QPA_PLATFORMTHEME = "qt6ct";
-};
-
-  # Hint Electron apps to use Wayland.
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
-# Configure keymap.
-services.xserver.xkb = {
-  layout = "us";
-  variant = "intl"; 
-  options = "compose:ralt"; # Forcefully forces Right Alt to act as your Compose key
-};
-
-i18n.inputMethod = {
-  enable = true;
-  type = "fcitx5";
-  fcitx5 = {
-    waylandFrontend = true;
-    addons = with pkgs; [
-      fcitx5-gtk  # Crucial for Ghostty and GTK4 apps
-    ];
+    QT_QPA_PLATFORMTHEME = "qt6ct";
+    NIXOS_OZONE_WL = "1";
   };
-};
 
-# Enable printing.
+  # Configure keymap.
+  services.xserver.xkb = {
+    layout = "us";
+    variant = "intl";
+    options = "compose:ralt";
+  };
+
+  i18n.inputMethod = {
+    enable = true;
+    type = "fcitx5";
+
+    fcitx5 = {
+      waylandFrontend = true;
+      addons = with pkgs; [
+        fcitx5-gtk
+      ];
+    };
+  };
+
+  # Enable printing.
   services.printing.enable = true;
 }
