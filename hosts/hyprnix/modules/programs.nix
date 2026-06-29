@@ -5,6 +5,7 @@
   programs.zsh.enable = true;
   programs.neovim.enable = true;
   programs.bat.enable = true;
+  programs.firefox.enable = true;
   programs.fzf.keybindings = true;
   programs.kdeconnect.enable = true;
 
