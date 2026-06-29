@@ -3,13 +3,19 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia/legacy-v4";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
   };
 
-  outputs = { self, nixpkgs, ... }: {
+  outputs = inputs@{ self, nixpkgs, noctalia, ... }: {
     nixosConfigurations = {
 
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
 
         modules = [
           ./hosts/nixos/configuration.nix
@@ -18,6 +24,7 @@
 
       hyprnix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
 
         modules = [
           ./hosts/hyprnix/configuration.nix
