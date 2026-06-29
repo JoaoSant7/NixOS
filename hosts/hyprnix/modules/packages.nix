@@ -8,6 +8,7 @@
     brave
     distrobox
     eza
+    egl-wayland
     fastfetch
     fd
     ffmpeg-full
