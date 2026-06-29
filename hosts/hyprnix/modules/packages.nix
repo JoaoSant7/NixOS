@@ -36,7 +36,7 @@
     stow
     syncthing
     syncthingtray
-    thunar
+    nemo
     tealdeer
     tmux
     tree-sitter
