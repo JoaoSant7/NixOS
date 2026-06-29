@@ -6,7 +6,9 @@
   environment.systemPackages = with pkgs; [
     atuin
     brave
+    boxbuddy
     distrobox
+    discord
     eza
     egl-wayland
     fastfetch
@@ -30,6 +32,7 @@
     lazygit
     libgcc
     lua
+    obsidian
     lua-language-server
     poppler
     prettier
