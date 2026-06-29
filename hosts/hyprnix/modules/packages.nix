@@ -33,6 +33,7 @@
     libgcc
     lua
     obsidian
+    obs-studio
     lua-language-server
     poppler
     prettier

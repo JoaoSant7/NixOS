@@ -24,6 +24,7 @@
     lua
     lua-language-server
     nerd-fonts.jetbrains-mono
+    nodejs
     poppler
     prettier
     python3
