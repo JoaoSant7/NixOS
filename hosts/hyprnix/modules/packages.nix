@@ -5,7 +5,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     atuin
-    brave
+    #brave
     distrobox
     eza
     egl-wayland
@@ -19,12 +19,12 @@
     htop
     imagemagick
     jq
+    kdePackages.ark
     kitty
     lazygit
     libgcc
     lua
     lua-language-server
-    nerd-fonts.jetbrains-mono
     poppler
     prettier
     python3
@@ -33,6 +33,7 @@
     stow
     syncthing
     syncthingtray
+    thunar
     tealdeer
     tmux
     tree-sitter
