@@ -28,6 +28,10 @@
     # };
   };
 
+  environment.sessionVariables = {
+  QT_QPA_PLATFORMTHEME = "qt6ct";
+};
+
   # Hint Electron apps to use Wayland.
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
