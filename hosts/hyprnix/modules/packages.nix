@@ -5,7 +5,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     atuin
-    #brave
+    brave
     distrobox
     eza
     egl-wayland
@@ -51,6 +51,7 @@
     wl-clipboard
     xclip
     yazi
+    zed-editor
     zoxide
   ];
 }
