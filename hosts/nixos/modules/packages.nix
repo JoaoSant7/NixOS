@@ -28,6 +28,7 @@
     python3
     resvg
     ripgrep
+    sddm-astronaut
     stow
     syncthing
     syncthingtray
