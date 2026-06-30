@@ -12,7 +12,8 @@
     ./modules/networking.nix
     ./modules/users.nix
     ./modules/programs.nix
-    ./modules/packages.nix
+    ./modules/cli-packages.nix
+    ./modules/gui-packages.nix
   ];
 
   # Enable flakes.

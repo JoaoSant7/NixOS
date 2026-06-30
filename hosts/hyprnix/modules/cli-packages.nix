@@ -1,14 +1,11 @@
 { config, pkgs, lib, ... }:
 
 {
-  # List packages installed in system profile. To search, run:
+  # Cli packages.
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     atuin
-    brave
-    boxbuddy
     distrobox
-    discord
     eza
     egl-wayland
     fastfetch
@@ -16,7 +13,6 @@
     ffmpeg-full
     fzf
     gcc
-    ghostty
     git
     hyprcursor
     hyprlock
@@ -24,15 +20,10 @@
     htop
     imagemagick
     jq
-    kdePackages.ark
-    kdePackages.qt6ct
-    kdePackages.breeze-icons
-    kdePackages.dolphin
     kitty
     lazygit
     libgcc
     lua
-    obsidian
     lua-language-server
     poppler
     prettier
@@ -41,21 +32,15 @@
     ripgrep
     stow
     stylua
-    syncthing
-    syncthingtray
-    noctalia-shell
-    nwg-look
     tealdeer
     tmux
     tree-sitter
     unzip
-    vlc
     wlsunset
     wget
     wl-clipboard
     xclip
     yazi
-    zed-editor
     zoxide
   ];
 }
