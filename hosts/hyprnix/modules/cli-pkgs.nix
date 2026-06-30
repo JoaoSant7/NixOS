@@ -6,6 +6,7 @@
   environment.systemPackages = with pkgs; [
     atuin
     cargo
+    curl
     distrobox
     eza
     egl-wayland
@@ -26,6 +27,8 @@
     libgcc
     lua
     lua-language-server
+    nil
+    nixpkgs-fmt
     poppler
     prettier
     python3
@@ -33,6 +36,7 @@
     ripgrep
     stow
     stylua
+    trash-cli
     tealdeer
     tmux
     tree-sitter
