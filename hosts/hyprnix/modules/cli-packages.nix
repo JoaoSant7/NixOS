@@ -5,6 +5,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     atuin
+    cargo
     distrobox
     eza
     egl-wayland
