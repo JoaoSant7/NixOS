@@ -25,6 +25,7 @@
     lua-language-server
     nerd-fonts.jetbrains-mono
     nodejs
+    obs-studio
     poppler
     prettier
     python3
@@ -38,7 +39,7 @@
     tmux
     tree-sitter
     unzip
-    vlc
+    vlc-bin
     wget
     wl-clipboard
     xclip
