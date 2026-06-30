@@ -41,6 +41,7 @@
     wget
     wl-clipboard
     xclip
+    xwayland-satellite
     yazi
     zoxide
   ];
