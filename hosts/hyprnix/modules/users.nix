@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-  # Define a user account. Don't forget to set a password with 'passwd'.
+  # Define a user account.
   users.users."pedro" = {
     isNormalUser = true;
     description = "Pedro";
@@ -9,7 +9,13 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
-      #  thunderbird
+      # thunderbird
     ];
+  };
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 15d";
   };
 }
