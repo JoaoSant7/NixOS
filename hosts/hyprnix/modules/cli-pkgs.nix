@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ pkgs, ... }:
 
 {
   # Cli packages.
@@ -8,6 +8,8 @@
     cargo
     curl
     distrobox
+    docker
+    docker-compose
     eza
     egl-wayland
     fastfetch
