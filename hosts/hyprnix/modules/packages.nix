@@ -33,7 +33,6 @@
     libgcc
     lua
     obsidian
-    obs-studio
     lua-language-server
     poppler
     prettier
@@ -41,6 +40,7 @@
     resvg
     ripgrep
     stow
+    stylua
     syncthing
     syncthingtray
     noctalia-shell
