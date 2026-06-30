@@ -69,6 +69,13 @@ in
     };
   };
 
+  services.udev.enable = true;
+
+  services.udev.packages = with pkgs; [
+    vial
+    via
+  ];
+
   # Enable printing.
   services.printing.enable = true;
 }

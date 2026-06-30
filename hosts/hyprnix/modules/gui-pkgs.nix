@@ -20,6 +20,7 @@
     syncthingtray
     noctalia-shell
     nwg-look
+    vial
     vlc
     wlsunset
     zed-editor
