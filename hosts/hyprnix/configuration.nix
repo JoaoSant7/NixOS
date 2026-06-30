@@ -10,6 +10,7 @@
     ./modules/hyprland.nix
     ./modules/niri.nix
     ./modules/noctalia.nix
+    ./modules/services.nix
     ./modules/audio.nix
     ./modules/networking.nix
     ./modules/users.nix
