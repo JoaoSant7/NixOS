@@ -7,13 +7,14 @@
     ./modules/boot.nix
     ./modules/nvidia.nix
     ./modules/hyprland.nix
+    ./modules/niri.nix
     ./modules/noctalia.nix
     ./modules/audio.nix
     ./modules/networking.nix
     ./modules/users.nix
     ./modules/programs.nix
-    ./modules/cli-packages.nix
-    ./modules/gui-packages.nix
+    ./modules/cli-pkgs.nix
+    ./modules/gui-pkgs.nix
   ];
 
   # Enable flakes.
