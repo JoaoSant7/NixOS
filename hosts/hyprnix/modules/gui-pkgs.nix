@@ -6,6 +6,7 @@
   environment.systemPackages = with pkgs; [
     brave
     boxbuddy
+    copyq
     distrobox
     discord
     ghostty
