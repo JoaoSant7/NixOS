@@ -9,6 +9,7 @@
     distrobox
     discord
     ghostty
+    gnome-calculator
     kdePackages.ark
     kdePackages.qt6ct
     kdePackages.breeze-icons
