@@ -1,8 +1,6 @@
-{ config, pkgs, lib }:
+{ config, pkgs, lib, ... }:
 
 {
-  hardware.bluetooh.enable = true;
+  hardware.bluetooth.enable = true;
   services.power-profiles-daemon.enable = true;
-  services.tuned.enable = true;
-  servies.upower.enable = true;
 }
