@@ -15,6 +15,8 @@
     slurp
     satty
 
+    sddm-astronaut
+
     kdePackages.ark
     kdePackages.baloo
     kdePackages.baloo-widgets
