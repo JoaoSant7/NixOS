@@ -1,11 +1,12 @@
 { pkgs, inputs, ... }:
 
 {
+  services.noctalia-shell.enable = true;
+
   imports = [ inputs.noctalia.nixosModules.default ];
 
   nixpkgs.overlays = [ inputs.noctalia.overlays.default ];
 
-  services.noctalia-shell.enable = true;
 
   nix.settings = {
     substituters = [ "https://noctalia.cachix.org" ];
