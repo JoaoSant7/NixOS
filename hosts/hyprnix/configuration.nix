@@ -3,23 +3,24 @@
 {
   imports = [
     # Include the results of the hardware scan.
+    #./modules/sddm.nix
     ./env-vars.nix
-    ./hardware-configuration.nix
+    ./modules/apps/cli-pkgs.nix
+    ./modules/apps/default-apps.nix
+    ./modules/apps/gui-pkgs.nix
+    ./modules/audio.nix
     ./modules/boot.nix
-    ./modules/nvidia.nix
+    ./modules/fonts.nix
     ./modules/hyprland.nix
+    ./modules/ly.nix
+    ./modules/networking.nix
     ./modules/niri.nix
     ./modules/noctalia.nix
-    ./modules/fonts.nix
-    ./modules/services.nix
-    ./modules/ly.nix
-    #./modules/sddm.nix
-    ./modules/audio.nix
-    ./modules/networking.nix
-    ./modules/users.nix
+    ./modules/nvidia.nix
     ./modules/programs.nix
-    ./modules/cli-pkgs.nix
-    ./modules/gui-pkgs.nix
+    ./modules/services.nix
+    ./modules/users.nix
+    ./hardware-configuration.nix
   ];
 
   # Enable flakes.
