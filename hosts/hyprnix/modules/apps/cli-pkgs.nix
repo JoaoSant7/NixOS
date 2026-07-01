@@ -1,0 +1,61 @@
+{ pkgs, ... }:
+
+{
+  # Cli packages.
+  # $ nix search wget
+  environment.systemPackages = with pkgs; [
+    atuin
+    cargo
+    curl
+    distrobox
+    docker
+    docker-compose
+    eza
+    egl-wayland
+    fastfetch
+    fd
+    ffmpeg-full
+    fzf
+    gcc
+    git
+    gvfs
+    hyprshutdown
+    hyprcursor
+    hyprlock
+    hypridle
+    htop
+    imagemagick
+    jq
+    kdePackages.kde-cli-tools
+    kitty
+    lazygit
+    libgcc
+    lua
+    lua-language-server
+    ly
+    nil
+    nixpkgs-fmt
+    poppler
+    prettier
+    python3
+    qt5.qtwayland
+    qt6.qtwayland
+    resvg
+    ripgrep
+    stow
+    stylua
+    trash-cli
+    tealdeer
+    tmux
+    tree-sitter
+    unzip
+    wlsunset
+    wget
+    wl-clipboard
+    xdg-desktop-portal-hyprland
+    xclip
+    xwayland-satellite
+    yazi
+    zoxide
+  ];
+}
