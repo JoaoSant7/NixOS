@@ -1,7 +1,11 @@
-{ config, pkgs, lib, ...}:
+{ config, pkgs, lib, ... }:
 
 {
   environment.sessionVariables = {
+
+    NIXOS_OZONE_WL = "1";
+
+
     GBM_BACKEND = "nvidia_drm";
     LIBVA_DRIVER_NAME = "nvidia";
     __GLX_VENDOR_LIBRARY_NAME = "nvidia";
