@@ -7,6 +7,7 @@
   programs.bat.enable = true;
   programs.firefox.enable = true;
   programs.fzf.keybindings = true;
+  programs.fzf.fuzzyCompletion = true;
   programs.kdeconnect.enable = true;
   programs.obs-studio.enable = true;
 
