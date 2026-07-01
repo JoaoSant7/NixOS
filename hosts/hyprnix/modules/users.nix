@@ -6,7 +6,7 @@
     isNormalUser = true;
     description = "Pedro";
     shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       kdePackages.kate
       # thunderbird
