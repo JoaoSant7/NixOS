@@ -1,18 +1,23 @@
 {
   description = "Backup NixOS";
 
+  nixConfig = {
+    extra-substituters = [ "https://noctalia.cachix.org" ];
+    extra-trusted-public-keys = [ "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" ];
+  };
+
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     noctalia = {
       url = "github:noctalia-dev/noctalia/legacy-v4";
-      inputs.nixpkgs.follows = "nixpkgs-unstable"; # This is great since Noctalia targets unstable
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
   };
 
   outputs = inputs@{ self, nixpkgs, noctalia, ... }: {
-    nixosConfigurations = { 
+    nixosConfigurations = {
 
       hyprnix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -20,12 +25,6 @@
 
         modules = [
           ./hosts/hyprnix/configuration.nix
-          
-          # 1. Bring in Noctalia's NixOS module features
-          noctalia.nixosModules.default 
-
-          # 2. Keep your overlay so the packages build with the right nixpkgs channel
-          { nixpkgs.overlays = [ noctalia.overlays.default ]; }
         ];
       };
 
