@@ -18,6 +18,7 @@
     fzf
     gcc
     git
+    hyprshutdown
     hyprcursor
     hyprlock
     hypridle
@@ -29,6 +30,7 @@
     libgcc
     lua
     lua-language-server
+    ly
     nil
     nixpkgs-fmt
     poppler
