@@ -1,15 +1,17 @@
-{ pkgs }:
+{ pkgs, ... }:
 
-with pkgs; [
-  distrobox
+{
+  environment.systemPackages = with pkgs;[
+    distrobox
 
-  docker
-  docker-compose
+    docker
+    docker-compose
 
-  gvfs
+    gvfs
 
-  kitty
-  ly
+    kitty
+    ly
 
-  kdePackages.kde-cli-tools
-]
+    kdePackages.kde-cli-tools
+  ];
+}

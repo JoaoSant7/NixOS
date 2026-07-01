@@ -1,16 +1,18 @@
-{ pkgs }:
+{ pkgs, ... }:
 
-with pkgs; [
-  cargo
-  gcc
-  libgcc
+{
+  environment.systemPackages = with pkgs;[
+    cargo
+    gcc
+    libgcc
 
-  lua
-  lua-language-server
+    lua
+    lua-language-server
 
-  nil
-  nixpkgs-fmt
-  prettier
-  python3
-  stylua
-]
+    nil
+    nixpkgs-fmt
+    prettier
+    python3
+    stylua
+  ];
+}

@@ -1,7 +1,9 @@
-{ pkgs }:
+{ pkgs, ... }:
 
-with pkgs; [
-  ffmpeg-full
-  imagemagick
-  resvg
-]
+{
+  environment.systemPackages = with pkgs; [
+    ffmpeg-full
+    imagemagick
+    resvg
+  ];
+}

@@ -1,18 +1,20 @@
-{ pkgs }:
+{ pkgs, ... }:
 
-with pkgs; [
-  egl-wayland
+{
+  environment.systemPackages = with pkgs; [
+    egl-wayland
 
-  hyprcursor
-  hypridle
-  hyprlock
-  hyprshutdown
+    hyprcursor
+    hypridle
+    hyprlock
+    hyprshutdown
 
-  wl-clipboard
-  wlsunset
+    wl-clipboard
+    wlsunset
 
-  xclip
+    xclip
 
-  xdg-desktop-portal-hyprland
-  xwayland-satellite
-]
+    xdg-desktop-portal-hyprland
+    xwayland-satellite
+  ];
+}
