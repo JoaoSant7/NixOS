@@ -19,7 +19,6 @@
     obsidian
     syncthing
     syncthingtray
-    noctalia-shell
     nwg-look
     vial
     vlc
