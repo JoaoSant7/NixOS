@@ -11,6 +11,9 @@
     discord
     ghostty
     gnome-calculator
+    grim
+    slurp
+    satty
     kdePackages.ark
     kdePackages.qt6ct
     kdePackages.breeze-icons
