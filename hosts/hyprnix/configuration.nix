@@ -2,12 +2,14 @@
 
 {
   imports = [
-    # Include the results of the hardware scan.
     #./modules/sddm.nix
+
     ./env-vars.nix
-    ./modules/apps/cli-pkgs.nix
-    ./modules/apps/default-apps.nix
-    ./modules/apps/gui-pkgs.nix
+
+    ./modules/apps
+
+    ./modules/apps/default-apps.nix # IMPORTANT: keep this separate
+
     ./modules/audio.nix
     ./modules/boot.nix
     ./modules/fonts.nix
@@ -20,6 +22,7 @@
     ./modules/programs.nix
     ./modules/services.nix
     ./modules/users.nix
+
     ./hardware-configuration.nix
   ];
 
