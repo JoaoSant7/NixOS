@@ -12,7 +12,9 @@
   programs.obs-studio.enable = true;
 
   # Docker virtualisation
-  virtualisation.docker.enable = true;
+  virtualisation.docker = {
+    enable = true;
+  };
 
   programs.git = {
     enable = true;
