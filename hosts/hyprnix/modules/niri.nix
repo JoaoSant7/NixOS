@@ -1,28 +1,6 @@
 { config, pkgs, lib, ... }:
 
-let
-  astronaut = pkgs.sddm-astronaut.override {
-    # Change this to another preset if you like.
-    embeddedTheme = "astronaut";
-  };
-in
 {
-  # Enable SDDM.
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-
-    theme = "sddm-astronaut-theme";
-
-    extraPackages = [
-      astronaut
-    ];
-  };
-
-  # Make the theme available system-wide.
-  environment.systemPackages = [
-    astronaut
-  ];
 
   # Enable Niri with UWSM for proper session registration.
   programs.niri = {
@@ -31,12 +9,7 @@ in
 
   # Enable UWSM.
   programs.uwsm = {
-    enable = true; 
-  };
-
-  environment.sessionVariables = {
-    QT_QPA_PLATFORMTHEME = "qt6ct";
-    NIXOS_OZONE_WL = "1";
+    enable = true;
   };
 
   # Configure keymap.
@@ -58,13 +31,4 @@ in
     };
   };
 
-  services.udev.enable = true;
-
-  services.udev.packages = with pkgs; [
-    vial
-    via
-  ];
-
-  # Enable printing.
-  services.printing.enable = true;
 }
