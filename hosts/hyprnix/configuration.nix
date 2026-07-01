@@ -11,6 +11,8 @@
     ./modules/niri.nix
     ./modules/noctalia.nix
     ./modules/services.nix
+    ./modules/ly.nix
+    #./modules/sddm.nix
     ./modules/audio.nix
     ./modules/networking.nix
     ./modules/users.nix
