@@ -10,6 +10,7 @@
     ./modules/hyprland.nix
     ./modules/niri.nix
     ./modules/noctalia.nix
+    ./modules/fonts.nix
     ./modules/services.nix
     ./modules/ly.nix
     #./modules/sddm.nix
