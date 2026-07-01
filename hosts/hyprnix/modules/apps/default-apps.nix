@@ -1,6 +1,8 @@
 { config, pkgs, lib, ... }:
 
 {
+  environment.etc."xdg/menus/applications.menu".source = "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
+
   xdg.mime.enable = true;
 
   xdg.mime.defaultApplications = {
