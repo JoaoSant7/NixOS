@@ -14,5 +14,7 @@
     prettier
     python3
     stylua
+
+    tree-sitter
   ];
 }

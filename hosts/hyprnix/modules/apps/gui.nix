@@ -3,8 +3,9 @@
 {
   environment.systemPackages = with pkgs; [
     brave
-    boxbuddy
-    copyq
+    #boxbuddy
+    #copyq
+    distroshelf
     distrobox
     discord
     ghostty

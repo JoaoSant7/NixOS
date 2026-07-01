@@ -8,6 +8,7 @@
     fd
     fzf
     git
+    helix
     htop
     jq
     lazygit
@@ -21,6 +22,5 @@
     wget
     yazi
     zoxide
-    tree-sitter
   ];
 }

@@ -6,7 +6,7 @@
 
     hyprcursor
     hypridle
-    hyprlock
+    #hyprlock
     hyprshutdown
 
     wl-clipboard
