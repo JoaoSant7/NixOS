@@ -36,6 +36,8 @@
     poppler
     prettier
     python3
+    qt5.qtwayland
+    qt6.qtwayland
     resvg
     ripgrep
     stow
