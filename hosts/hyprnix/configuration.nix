@@ -6,9 +6,8 @@
 
     ./env-vars.nix
 
-    ./modules/apps
-
-    ./modules/apps/default-apps.nix # IMPORTANT: keep this separate
+    ./modules/apps # package aggregator ONLY
+    ./modules/apps/default-apps.nix # system module (xdg)
 
     ./modules/audio.nix
     ./modules/boot.nix
