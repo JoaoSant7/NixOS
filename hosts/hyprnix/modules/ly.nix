@@ -14,12 +14,12 @@
     settings = {
       animate = true;
       animation = "matrix";
-      #bigclock = true;
+      bigclock = "en";
       hide_borders = true;
       save = true;
       load = true;
-      #clock = "%H:%M";
-      #clear_password = true;
+      clock = "%H:%M";
+      clear_password = true;
     };
   };
 }
