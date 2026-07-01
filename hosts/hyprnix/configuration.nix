@@ -2,8 +2,6 @@
 
 {
   imports = [
-    #./modules/sddm.nix
-
     ./env-vars.nix
 
     ./modules/apps # package aggregator ONLY
@@ -13,9 +11,7 @@
     ./modules/boot.nix
     ./modules/fonts.nix
     ./modules/hyprland.nix
-    ./modules/ly.nix
     ./modules/networking.nix
-    ./modules/niri.nix
     ./modules/noctalia.nix
     ./modules/nvidia.nix
     ./modules/programs.nix
