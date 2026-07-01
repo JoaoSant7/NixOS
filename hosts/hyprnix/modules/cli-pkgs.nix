@@ -50,6 +50,7 @@
     wlsunset
     wget
     wl-clipboard
+    xdg-desktop-portal-hyprland
     xclip
     xwayland-satellite
     yazi
