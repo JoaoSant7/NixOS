@@ -13,13 +13,13 @@
     # Optional configuration
     settings = {
       animate = true;
-      animation = "blackhole";
-      bigclock = true;
+      animation = "matrix";
+      #bigclock = true;
       hide_borders = true;
       save = true;
       load = true;
-      clock = "%H:%M";
-      clear_password = true;
+      #clock = "%H:%M";
+      #clear_password = true;
     };
   };
 }
