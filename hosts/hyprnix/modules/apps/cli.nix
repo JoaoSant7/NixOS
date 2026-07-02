@@ -20,6 +20,7 @@
     trash-cli
     unzip
     wget
+    xdg-utils
     yazi
     zoxide
   ];
