@@ -1,11 +1,22 @@
 { config, pkgs, lib, ... }:
 
 {
+  # Enable and configure git.
+  programs.git = {
+    enable = true;
+
+    config = {
+      user.name = "JoaoSant7";
+      user.email = "pedro_romano7@proton.me";
+
+      init.defaultBranch = "main";
+    };
+  };
+
   # Enable programs.
   programs.zsh.enable = true;
   programs.neovim.enable = true;
   programs.bat.enable = true;
-  programs.firefox.enable = true;
   programs.fzf.keybindings = true;
   programs.fzf.fuzzyCompletion = true;
   programs.kdeconnect.enable = true;
@@ -16,15 +27,8 @@
     enable = true;
   };
 
-  programs.git = {
+  virtualisation.podman = {
     enable = true;
-
-    config = {
-      user.name = "JoaoSant7";
-      user.email = "pedro_romano7@proton.me";
-
-      init.defaultBranch = "main";
-    };
   };
 
   # Some programs need SUID wrappers, can be configured further or are
