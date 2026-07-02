@@ -6,16 +6,10 @@
     isNormalUser = true;
     description = "Pedro";
     shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
-    packages = with pkgs; [
-      kdePackages.kate
-      # thunderbird
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "docker"
     ];
-  };
-
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 15d";
   };
 }
