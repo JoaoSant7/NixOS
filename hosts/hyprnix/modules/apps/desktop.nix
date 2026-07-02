@@ -10,7 +10,6 @@
     gvfs
 
     kitty
-    ly
 
     kdePackages.kde-cli-tools
   ];
