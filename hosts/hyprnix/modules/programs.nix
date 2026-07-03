@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ pkgs, ... }:
 
 {
   # Enable and configure git.
@@ -17,12 +17,29 @@
   programs.zsh.enable = true;
   programs.neovim.enable = true;
   programs.bat.enable = true;
+
+  # fzf.
   programs.fzf.keybindings = true;
   programs.fzf.fuzzyCompletion = true;
-  programs.kdeconnect.enable = true;
-  programs.obs-studio.enable = true;
-  programs.thunar.enable = true;
 
+  # KDE Connect.
+  programs.kdeconnect.enable = true;
+
+  # OBS Studio.
+  programs.obs-studio.enable = true;
+
+  # Lazygit.
+  programs.lazygit.enable = true;
+
+  # Thunar.
+  programs.thunar.enable = true;
+  programs.thunar.plugins = with pkgs; [
+    thunar-volman
+    thunar-archive-plugin
+    thunar-media-tags-plugin
+  ];
+
+  # xfconf dconf.
   programs = {
     xfconf.enable = true;
     dconf.enable = true;
@@ -33,6 +50,7 @@
     enable = true;
   };
 
+  # Podman virtualisation.
   virtualisation.podman = {
     enable = true;
   };

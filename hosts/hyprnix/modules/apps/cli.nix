@@ -11,7 +11,6 @@
     helix
     htop
     jq
-    lazygit
     poppler
     ripgrep
     stow
