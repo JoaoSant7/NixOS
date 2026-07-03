@@ -10,7 +10,10 @@
     ./modules/audio.nix
     ./modules/boot.nix
     ./modules/fonts.nix
+
     ./modules/hyprland.nix
+    ./modules/niri.nix
+
     ./modules/networking.nix
     ./modules/noctalia.nix
     ./modules/nvidia.nix
