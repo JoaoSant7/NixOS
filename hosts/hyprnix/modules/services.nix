@@ -8,7 +8,6 @@
 
   services.power-profiles-daemon.enable = true;
 
-  services.gvfs.enable = true;
 
   # udev services.
   services.udev.enable = true;
@@ -29,6 +28,12 @@
     user = "pedro";
     group = "users";
     configDir = "/home/pedro/.config/syncthing";
+  };
+
+  #gvfs and tumbler.
+  services = {
+    gvfs.enable = true;
+    tumbler.enable = true;
   };
 
   #SDDM
