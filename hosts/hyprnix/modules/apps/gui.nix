@@ -28,8 +28,7 @@
     kdePackages.breeze-icons
     kdePackages.gwenview
 
-    papirus-icon-theme
-    papirus-folders
+    qogir-icon-theme
     adwaita-icon-theme
 
     kitty
