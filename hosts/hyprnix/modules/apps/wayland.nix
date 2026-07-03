@@ -12,6 +12,8 @@
     wl-clipboard
     wlsunset
 
+    wtype
+
     xclip
 
     xdg-desktop-portal-hyprland
