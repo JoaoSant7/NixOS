@@ -26,6 +26,7 @@
     kdePackages.qtwayland
     kdePackages.breeze-icons
     kdePackages.gwenview
+    qogir-icon-theme
 
     kitty
     obsidian
