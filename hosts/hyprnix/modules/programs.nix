@@ -21,6 +21,12 @@
   programs.fzf.fuzzyCompletion = true;
   programs.kdeconnect.enable = true;
   programs.obs-studio.enable = true;
+  programs.thunar.enable = true;
+
+  programs = {
+    xfconf.enable = true;
+    dconf.enable = true;
+  };
 
   # Docker virtualisation
   virtualisation.docker = {
