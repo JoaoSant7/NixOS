@@ -13,7 +13,6 @@
 
     ./modules/hyprland.nix
     ./modules/niri.nix
-    ./modules/icons.nix
 
     ./modules/networking.nix
     ./modules/noctalia.nix
