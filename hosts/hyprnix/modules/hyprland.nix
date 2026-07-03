@@ -32,16 +32,6 @@ in
   # SDDM
   environment.systemPackages = [ sddm-astronaut ];
 
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-    package = pkgs.kdePackages.sddm;
-    extraPackages = with pkgs; [
-      kdePackages.qtmultimedia # necessário para vídeos/áudio de fundo
-    ];
-    theme = "sddm-astronaut-theme";
-  };
-
   # Configure keymap.
   services.xserver.xkb = {
     layout = "us";
