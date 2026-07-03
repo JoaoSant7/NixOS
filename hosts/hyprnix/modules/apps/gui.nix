@@ -2,6 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
+    adw-gtk3
+
     brave
     #boxbuddy
     #copyq
@@ -11,6 +13,8 @@
     ghostty
     gnome-calculator
 
+    glib
+
     grim
     slurp
     satty
@@ -18,15 +22,15 @@
     sddm-astronaut
 
     kdePackages.ark
-    kdePackages.baloo
-    kdePackages.baloo-widgets
-    kdePackages.dolphin
-    kdePackages.dolphin-plugins
     kdePackages.qt6ct
+    kdePackages.qtsvg
     kdePackages.qtwayland
     kdePackages.breeze-icons
     kdePackages.gwenview
-    qogir-icon-theme
+
+    papirus-icon-theme
+    papirus-folders
+    adwaita-icon-theme
 
     kitty
     obsidian
