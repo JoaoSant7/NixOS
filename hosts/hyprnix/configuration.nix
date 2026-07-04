@@ -2,8 +2,6 @@
 
 {
   imports = [
-    ./env-vars.nix
-
     ./modules/apps # package aggregator ONLY
     ./modules/apps/default-apps.nix # system module (xdg)
 
