@@ -2,7 +2,7 @@
 
 let
   sddm-astronaut = (pkgs.sddm-astronaut.override {
-    embeddedTheme = "astronaut"; # troque pelo tema que preferir
+    embeddedTheme = "astronaut";
     themeConfig = {
       HeaderTextColor = "#d5c4a1";
       Background = "Backgrounds/your-custom-background.png";
