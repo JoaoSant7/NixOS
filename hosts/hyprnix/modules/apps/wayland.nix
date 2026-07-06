@@ -9,6 +9,7 @@
     hyprcursor
     hypridle
     #hyprlock
+    hyprpicker
     hyprshutdown
 
     wl-clipboard
