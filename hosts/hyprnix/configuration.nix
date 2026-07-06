@@ -7,6 +7,9 @@
 
     ./modules/audio.nix
     ./modules/boot.nix
+
+    ./modules/home-manager.nix
+
     ./modules/fonts.nix
 
     ./modules/hyprland.nix
