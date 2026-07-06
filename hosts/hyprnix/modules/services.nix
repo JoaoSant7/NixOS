@@ -42,7 +42,7 @@
     wayland.enable = true;
     package = pkgs.kdePackages.sddm;
     extraPackages = with pkgs; [
-      pkgs.sddm-astronaut
+      sddm-astronaut
       kdePackages.qtmultimedia # necessário para vídeos/áudio de fundo
     ];
     theme = "sddm-astronaut-theme";
