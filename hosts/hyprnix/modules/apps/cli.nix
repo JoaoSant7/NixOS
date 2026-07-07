@@ -18,9 +18,11 @@
     tmux
     trash-cli
     unzip
+    uv
     wget
     xdg-utils
     yazi
+    yt-dlp
     zoxide
   ];
 }
