@@ -2,44 +2,48 @@
 
 {
   environment.systemPackages = with pkgs; [
-
+    adwaita-icon-theme
     adw-gtk3
 
     brave
-    #boxbuddy
-    #copyq
+
+    # copyq
+
+    discord
     distroshelf
     distrobox
-    discord
+
     ghostty
-    gnome-calculator
-
     glib
-
+    gnome-calculator
     grim
-    slurp
-    satty
-
-    sddm-astronaut
 
     kdePackages.ark
+    kdePackages.breeze-icons
+    kdePackages.gwenview
     kdePackages.qt6ct
     kdePackages.qtsvg
     kdePackages.qtwayland
-    kdePackages.breeze-icons
-    kdePackages.gwenview
-
-    qogir-icon-theme
-    adwaita-icon-theme
 
     kitty
+
+    nwg-look
+
     obsidian
+
+    qogir-icon-theme
+
+    satty
+    sddm-astronaut
+    slurp
     syncthing
     syncthingtray
-    nwg-look
+
     vial
     vlc
+
     wlsunset
+
     zed-editor
   ];
 }
