@@ -4,17 +4,12 @@
   imports = [
     ./modules/apps # package aggregator ONLY
     ./modules/apps/default-apps.nix # system module (xdg)
-
     ./modules/audio.nix
     ./modules/boot.nix
-
     ./modules/home-manager.nix
-
     ./modules/fonts.nix
-
     ./modules/hyprland.nix
-    ./modules/niri.nix
-
+    #./modules/niri.nix
     ./modules/networking.nix
     ./modules/noctalia.nix
     ./modules/nvidia.nix
