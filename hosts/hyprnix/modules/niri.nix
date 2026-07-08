@@ -31,6 +31,11 @@ in
   # SDDM
   environment.systemPackages = [ sddm-astronaut ];
 
+  # Configure Niri to use gtk file picker.
+  xdg.portal.config.niri = {
+    "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ]; # or "kde"
+  };
+
   # Configure keymap.
   services.xserver.xkb = {
     layout = "us";

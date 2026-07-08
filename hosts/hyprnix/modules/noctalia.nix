@@ -1,13 +1,14 @@
-{ pkgs, inputs, ... }:
-
+{ inputs, ... }:
 {
-  environment.systemPackages = [
-    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
-  ];
-
   imports = [ inputs.noctalia.nixosModules.default ];
 
   nixpkgs.overlays = [ inputs.noctalia.overlays.default ];
+
+  programs.noctalia = {
+    enable = true;
+    systemd.enable = true;
+    recommendedServices.enable = true;
+  };
 
   nix.settings = {
     substituters = [ "https://noctalia.cachix.org" ];

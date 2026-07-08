@@ -36,7 +36,7 @@
     tumbler.enable = true;
   };
 
-  #SDDM
+  #SDDM.
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
