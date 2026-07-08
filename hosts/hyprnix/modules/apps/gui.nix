@@ -36,6 +36,7 @@
     satty
     sddm-astronaut
     slurp
+    sound-theme-freedesktop
     syncthing
     syncthingtray
 
