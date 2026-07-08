@@ -12,7 +12,7 @@ let
     # Injeta seu wallpaper customizado no tema
     installPhase = oldAttrs.installPhase + ''
       chmod u+w $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
-      cp ${../../../nix-wallpapers/catholicon-holy-sepulchre.jpg} \
+      cp ${../../../nix-wallpapers/mountain-above-clouds.jpg} \
         $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/your-custom-background.png
     '';
   });
