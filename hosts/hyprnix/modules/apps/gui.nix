@@ -13,6 +13,8 @@
     distroshelf
     distrobox
 
+    flameshot
+
     ghostty
     glib
     gnome-calculator
