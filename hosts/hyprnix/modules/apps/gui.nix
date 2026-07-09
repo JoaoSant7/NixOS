@@ -4,7 +4,9 @@
   environment.systemPackages = with pkgs; [
     adwaita-icon-theme
     adw-gtk3
-    brave
+    (brave.override {
+      commandLineArgs = [ "--password-store=basic" ];
+    })
     discord
     distroshelf
     distrobox
