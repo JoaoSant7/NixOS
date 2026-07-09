@@ -5,6 +5,8 @@
     cliphist
     egl-wayland
     hyprcursor
+    libsecret
+    libgnome-keyring
     hypridle
     #hyprlock
     hyprpicker
