@@ -36,6 +36,11 @@
     tumbler.enable = true;
   };
 
+  #GNOME Keyring e PAM.
+  services.gnome.gnome-keyring.enable = true;
+  security.pam.services.sddm.enableGnomeKeyring = true;
+  environment.variables.XDG_RUNTIME_DIR = "/run/user/$UID";
+
   #SDDM.
   services.displayManager.sddm = {
     enable = true;
