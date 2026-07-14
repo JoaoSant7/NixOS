@@ -6,8 +6,9 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
+  # Power profiles
   services.power-profiles-daemon.enable = true;
-
+  services.upower.enable = true;
 
   # udev services.
   services.udev.enable = true;
@@ -20,6 +21,7 @@
   services.flatpak = {
     enable = true;
   };
+
 
   #Syncthing
   services.syncthing = {
@@ -66,7 +68,6 @@
     };
     xdgOpenUsePortal = false;
   };
-
 
   # Enable printing.
   services.printing.enable = true;
