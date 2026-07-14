@@ -13,6 +13,10 @@
     };
   };
 
+  # Monitor brightness control.
+  hardware.i2c.enable = true;
+  users.users.pedro.extraGroups = [ "i2c" ];
+
   # Enable programs.
   programs.zsh.enable = true;
   programs.neovim.enable = true;
