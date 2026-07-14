@@ -21,7 +21,6 @@
     kdePackages.qtwayland
     kitty
     loupe
-    nwg-look
     obsidian
     qogir-icon-theme
     satty

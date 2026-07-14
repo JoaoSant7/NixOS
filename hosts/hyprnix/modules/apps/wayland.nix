@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -11,6 +11,8 @@
     #hyprlock
     hyprpicker
     hyprshutdown
+    nwg-displays
+    nwg-look
     wl-clipboard
     wlsunset
     wtype
