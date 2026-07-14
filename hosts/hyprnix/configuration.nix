@@ -9,7 +9,7 @@
     ./modules/home-manager.nix
     ./modules/fonts.nix
     ./modules/hyprland.nix
-    #./modules/niri.nix
+    ./modules/niri.nix
     ./modules/networking.nix
     ./modules/noctalia.nix
     ./modules/nvidia.nix
