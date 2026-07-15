@@ -22,8 +22,7 @@
     enable = true;
   };
 
-
-  #Syncthing
+  # Syncthing.
   services.syncthing = {
     enable = true;
     openDefaultPorts = true;
@@ -41,17 +40,17 @@
   #GNOME Keyring.
   services.gnome.gnome-keyring.enable = true;
 
-  #SDDM.
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-    package = pkgs.kdePackages.sddm;
-    extraPackages = with pkgs; [
-      sddm-astronaut
-      kdePackages.qtmultimedia # necessário para vídeos/áudio de fundo
-    ];
-    theme = "sddm-astronaut-theme";
-  };
+  ##SDDM.
+  #services.displayManager.sddm = {
+  #  enable = true;
+  #  wayland.enable = true;
+  #  package = pkgs.kdePackages.sddm;
+  #  extraPackages = with pkgs; [
+  #    sddm-astronaut
+  #    kdePackages.qtmultimedia # necessário para vídeos/áudio de fundo
+  #  ];
+  #  theme = "sddm-astronaut-theme";
+  #};
 
   #XDG Portals.
   xdg.portal = {

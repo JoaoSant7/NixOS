@@ -1,6 +1,9 @@
-{ inputs, ... }:
+{ inputs, pkgs, ... }:
 {
-  imports = [ inputs.noctalia.nixosModules.default ];
+  imports = [
+    inputs.noctalia.nixosModules.default
+    inputs.noctalia-greeter.nixosModules.default
+  ];
 
   nixpkgs.overlays = [ inputs.noctalia.overlays.default ];
 
@@ -8,6 +11,25 @@
     enable = true;
     systemd.enable = true;
     recommendedServices.enable = true;
+  };
+
+  programs.noctalia-greeter = {
+    enable = true;
+
+    # Optional configuration
+    greeter-args = "";
+    settings = {
+      cursor = {
+        theme = "Bibata-Modern-Ice";
+        size = 24;
+        path = "${pkgs.bibata-cursors}/share/icons";
+      };
+      keyboard = {
+        layout = "us";
+        variant = "intl";
+        options = "compose:ralt";
+      };
+    };
   };
 
   nix.settings = {
