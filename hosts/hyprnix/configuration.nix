@@ -1,22 +1,13 @@
-{ config, pkgs, lib, ... }:
+{ ... }:
 
 {
   imports = [
-    ./modules/apps # package aggregator ONLY
-    ./modules/apps/default-apps.nix # system module (xdg)
-    ./modules/audio.nix
-    ./modules/boot.nix
-    ./modules/home-manager.nix
-    ./modules/fonts.nix
-    ./modules/hyprland.nix
-    ./modules/niri.nix
-    ./modules/networking.nix
-    ./modules/noctalia.nix
-    ./modules/nvidia.nix
-    ./modules/programs.nix
+    ./modules/apps
+    ./modules/apps/default-apps.nix
+    ./modules/desktop
+    ./modules/system
     ./modules/services.nix
     ./modules/users.nix
-
     ./hardware-configuration.nix
   ];
 
