@@ -1,22 +1,5 @@
 { pkgs, ... }:
 
-let
-  sddm-astronaut = (pkgs.sddm-astronaut.override {
-    embeddedTheme = "astronaut"; # troque pelo tema que preferir
-    themeConfig = {
-      HeaderTextColor = "#d5c4a1";
-      Background = "Backgrounds/your-custom-background.png";
-      # ... outras opções de tema
-    };
-  }).overrideAttrs (oldAttrs: {
-    # Injeta seu wallpaper customizado no tema
-    installPhase = oldAttrs.installPhase + ''
-      chmod u+w $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
-      cp ${../../../nix-wallpapers/mountain-above-clouds.jpg} \
-        $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/your-custom-background.png
-    '';
-  });
-in
 {
   # Enable Niri with UWSM for proper session registration.
   programs.niri = {
@@ -27,9 +10,6 @@ in
   programs.uwsm = {
     enable = true;
   };
-
-  # SDDM
-  environment.systemPackages = [ sddm-astronaut ];
 
   # Configure Niri to use gtk file picker.
   xdg.portal.config.niri = {
