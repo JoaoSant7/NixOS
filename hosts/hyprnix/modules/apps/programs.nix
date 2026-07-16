@@ -17,10 +17,11 @@
   hardware.i2c.enable = true;
   users.users.pedro.extraGroups = [ "i2c" ];
 
-  # Enable programs.
+  # Cli tools.
   programs.zsh.enable = true;
   programs.neovim.enable = true;
   programs.bat.enable = true;
+  programs.lazygit.enable = true;
 
   # fzf.
   programs.fzf.keybindings = true;
@@ -31,9 +32,6 @@
 
   # OBS Studio.
   programs.obs-studio.enable = true;
-
-  # Lazygit.
-  programs.lazygit.enable = true;
 
   # Thunar.
   programs.thunar.enable = true;
