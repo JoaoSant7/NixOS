@@ -2,13 +2,14 @@
 
 {
   imports = [
+    ./hardware-configuration.nix
     ./modules/apps
     ./modules/apps/default-apps.nix
     ./modules/desktop
-    ./modules/system
+    ./modules/home-manager.nix
     ./modules/services.nix
+    ./modules/system
     ./modules/users.nix
-    ./hardware-configuration.nix
   ];
 
   # Enable flakes.
