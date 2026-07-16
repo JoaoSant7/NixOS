@@ -3,10 +3,10 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./modules/apps
     ./modules/apps/default-apps.nix
     ./modules/desktop
     ./modules/home-manager.nix
+    ./modules/pkgs
     ./modules/services.nix
     ./modules/system
     ./modules/users.nix
