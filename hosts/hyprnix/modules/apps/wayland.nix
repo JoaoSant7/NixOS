@@ -8,7 +8,6 @@
     libsecret
     libgnome-keyring
     hypridle
-    #hyprlock
     hyprpicker
     hyprshutdown
     nwg-displays
