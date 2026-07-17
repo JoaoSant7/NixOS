@@ -1,5 +1,12 @@
+{ pkgs, ... }:
+
 {
   fonts = {
+    fontDir.enable = true;
+    packages = with pkgs; [
+      nerd-fonts.jetbrains-mono
+      corefonts
+    ];
     fontconfig = {
       enable = true;
 
@@ -11,7 +18,7 @@
       };
 
       subpixel = {
-        rgba = "rgb";          # rgb, bgr, vrgb, vbgr, none
+        rgba = "rgb"; # rgb, bgr, vrgb, vbgr, none
         lcdfilter = "default"; # or "light"
       };
     };
