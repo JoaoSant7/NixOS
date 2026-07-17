@@ -19,6 +19,7 @@
 
   # Cli tools.
   programs.zsh.enable = true;
+  programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
   programs.neovim.enable = true;
   programs.bat.enable = true;
   programs.lazygit.enable = true;
