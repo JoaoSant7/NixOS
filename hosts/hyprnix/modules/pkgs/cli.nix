@@ -25,5 +25,6 @@
     yazi
     yt-dlp
     zoxide
+    zsh-powerlevel10k
   ];
 }
