@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     adwaita-icon-theme
     adw-gtk3
+    bibata-cursors
     (brave.override {
       commandLineArgs = [ "--password-store=basic" ];
     })
@@ -21,6 +22,7 @@
     kitty
     loupe
     obsidian
+    papirus-nord
     qogir-icon-theme
     satty
     sddm-astronaut
