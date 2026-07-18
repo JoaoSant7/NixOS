@@ -6,5 +6,6 @@
     ./boot.nix
     ./env-vars.nix
     ./maintenance.nix
+    ./nix-ld.nix
   ];
 }
