@@ -24,6 +24,9 @@
   programs.bat.enable = true;
   programs.lazygit.enable = true;
 
+  # nh.
+  programs.nh.enable = true;
+
   # fzf.
   programs.fzf.keybindings = true;
   programs.fzf.fuzzyCompletion = true;
