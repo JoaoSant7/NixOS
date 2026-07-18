@@ -3,11 +3,12 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./modules/pkgs/default-apps.nix
     ./modules/desktop
+    ./modules/hardware
     ./modules/home-manager.nix
     ./modules/pkgs
-    ./modules/services.nix
+    ./modules/services
+    ./modules/hardware
     ./modules/system
     ./modules/users.nix
   ];
