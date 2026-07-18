@@ -2,12 +2,14 @@
 
 {
   imports = [
+    ./apps.nix
     ./cli.nix
-    ./gui.nix
-    ./desktop.nix
+    ./functionality.nix
     ./development.nix
     ./multimedia.nix
     ./programs.nix
+    ./productivity.nix
+    ./theming.nix
     ./wayland.nix
     ./default-apps.nix
   ];

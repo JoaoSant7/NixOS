@@ -4,6 +4,7 @@
     atuin
     caligula
     curl
+    distrobox
     eza
     fastfetch
     fd

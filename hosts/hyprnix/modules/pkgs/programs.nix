@@ -13,6 +13,18 @@
     };
   };
 
+  # nh.
+  programs.nh = {
+    enable = true;
+    flake = "/home/pedro/Projects/NixOS/";
+  };
+
+  # direnv.
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+  };
+
   # Monitor brightness control.
   hardware.i2c.enable = true;
   users.users.pedro.extraGroups = [ "i2c" ];
@@ -24,8 +36,6 @@
   programs.bat.enable = true;
   programs.lazygit.enable = true;
 
-  # nh.
-  programs.nh.enable = true;
 
   # fzf.
   programs.fzf.keybindings = true;
@@ -45,7 +55,7 @@
     thunar-media-tags-plugin
   ];
 
-  # xfconf dconf.
+  # xfconf and dconf.
   programs = {
     xfconf.enable = true;
     dconf.enable = true;

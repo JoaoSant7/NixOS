@@ -2,10 +2,13 @@
 
 {
   environment.systemPackages = with pkgs;[
-    distrobox
     ddcutil
-    docker
-    docker-compose
     gvfs
+    grim
+    satty
+    slurp
+    ffmpeg-full
+    imagemagick
+    resvg
   ];
 }

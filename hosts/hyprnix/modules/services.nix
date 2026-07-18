@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+  # Enable bluetooth.
   hardware.bluetooth.enable = true;
 
   # Enable the OpenSSH daemon.
