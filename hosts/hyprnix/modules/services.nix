@@ -6,6 +6,12 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
+  # Enable fstrim.
+  services.fstrim.enable = true;
+
+  # Enable fwupd.
+  services.fwupd.enable = true;
+
   # Power profiles
   services.power-profiles-daemon.enable = true;
   services.upower.enable = true;
@@ -77,4 +83,6 @@
     dates = "weekly";
     options = "--delete-older-than 15d";
   };
+
+  nix.optimise.automatic = true;
 }
