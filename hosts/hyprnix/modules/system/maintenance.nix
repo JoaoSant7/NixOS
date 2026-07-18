@@ -1,0 +1,12 @@
+{
+  services.fstrim.enable = true;
+  services.fwupd.enable = true;
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 15d";
+  };
+
+  nix.optimise.automatic = true;
+}
