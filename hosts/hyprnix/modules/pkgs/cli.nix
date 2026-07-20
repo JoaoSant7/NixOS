@@ -10,8 +10,6 @@
     fd
     fzf
     git
-    jj
-    helix
     htop
     jq
     poppler
