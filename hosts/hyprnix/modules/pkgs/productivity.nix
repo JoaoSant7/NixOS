@@ -3,7 +3,6 @@
 {
   environment.systemPackages = with pkgs; [
     ghostty
-    gnome-calculator
     distroshelf
     file-roller
     flameshot
