@@ -6,6 +6,7 @@
     kitty
     gnome-calculator
     distroshelf
+    file-roller
     flameshot
     loupe
     syncthing
