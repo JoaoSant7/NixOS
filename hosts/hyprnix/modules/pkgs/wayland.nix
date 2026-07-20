@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -7,10 +7,7 @@
     hyprcursor
     libsecret
     libgnome-keyring
-    hypridle
     hyprpicker
-    hyprshutdown
-    nwg-displays
     nwg-look
     wl-clipboard
     wlsunset
