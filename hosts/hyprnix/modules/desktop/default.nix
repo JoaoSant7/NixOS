@@ -4,7 +4,7 @@
   imports = [
     ./hyprland.nix
     ./input.nix
-    ./niri.nix
+    #./niri.nix
     ./noctalia.nix
     ./fonts.nix
   ];
