@@ -4,11 +4,10 @@
   environment.systemPackages = with pkgs; [
     adw-gtk3
     bibata-cursors
-    papirus-nord
     sound-theme-freedesktop
     tela-icon-theme
     kdePackages.qt6ct
-    kdePackages.qtsvg
+    #kdePackages.qtsvg
     kdePackages.qtwayland
   ];
 }
