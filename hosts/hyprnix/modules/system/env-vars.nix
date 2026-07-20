@@ -12,9 +12,16 @@
     # Electron
     ELECTRON_OZONE_PLATFORM_HINT = "auto";
 
+    # GDK
+    GDK_BACKEND = "wayland";
+
+    # XDG
+    XDG_SESSION_TYPE = "wayland";
+
     # Qt
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     QT_QPA_PLATFORMTHEME = "qt6ct";
+    QT_QPA_PLATAFORM = "wayland";
 
     # Cursor
     XCURSOR_THEME = "Bibata-Modern-Ice";
