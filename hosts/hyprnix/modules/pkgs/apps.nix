@@ -7,6 +7,7 @@
     })
     discord
     obsidian
+    mpv
     vlc
   ];
 }
