@@ -1,6 +1,8 @@
-{ config, pkgs, lib, ... }:
+{ config, ... }:
 
 {
+
+  hardware.enableAllFirmware = true;
 
   # Load nvidia modules early in initrd
   boot.initrd.kernelModules = [ "nvidia" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" ];
