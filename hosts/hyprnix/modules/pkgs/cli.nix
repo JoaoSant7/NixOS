@@ -26,6 +26,7 @@
     xdg-utils
     yazi
     yt-dlp
+    zip
     zoxide
     zsh-powerlevel10k
   ];
