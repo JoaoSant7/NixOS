@@ -7,5 +7,6 @@
     ./env-vars.nix
     ./maintenance.nix
     ./nix-ld.nix
+    ./swap.nix
   ];
 }
