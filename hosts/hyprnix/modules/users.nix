@@ -11,17 +11,18 @@
       "wheel"
       "docker"
     ];
+  };
 
-    # Enable and configure git.
-    programs.git = {
-      enable = true;
+  # Enable and configure git.
+  programs.git = {
+    enable = true;
 
-      config = {
-        user.name = "JoaoSant7";
-        user.email = "pedro_romano7@proton.me";
+    config = {
+      user.name = "JoaoSant7";
+      user.email = "pedro_romano7@proton.me";
 
-        init.defaultBranch = "main";
-      };
+      init.defaultBranch = "main";
     };
+
   };
 }
