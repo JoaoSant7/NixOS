@@ -9,6 +9,7 @@
     qogir-icon-theme
     sddm-astronaut
     sound-theme-freedesktop
+    tela-icon-theme
     kdePackages.qt6ct
     kdePackages.qtsvg
     kdePackages.qtwayland
