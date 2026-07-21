@@ -7,6 +7,7 @@
     file-roller
     flameshot
     loupe
+    sioyek
     syncthing
     syncthingtray
     vial

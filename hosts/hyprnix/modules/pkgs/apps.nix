@@ -11,6 +11,9 @@
     #vlc
   ];
 
+  # Firefox.
+  programs.firefox.enable = true;
+
   # KDE Connect.
   programs.kdeconnect.enable = true;
 
