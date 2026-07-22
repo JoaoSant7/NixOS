@@ -7,7 +7,6 @@
     })
     discord
     obsidian
-    prismlauncher
     mpv
   ];
 
