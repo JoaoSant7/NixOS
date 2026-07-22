@@ -5,8 +5,8 @@
     ddcutil
     gvfs
     grim
-    openal
-    openal-soft
+    #openal
+    #openal-soft
     satty
     slurp
     ffmpeg-full
