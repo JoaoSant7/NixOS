@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ inputs, ... }:
 {
   imports = [
     inputs.noctalia.nixosModules.default
@@ -17,18 +17,16 @@
     enable = true;
 
     # Optional configuration
-    greeter-args = "";
-    settings = {
-      cursor = {
-        theme = "Bibata-Modern-Ice";
-        size = 24;
-        path = "${pkgs.bibata-cursors}/share/icons";
-      };
+    #greeter-args = "";
+    #settings = {
+    #cursor = {
+    #theme = "Posy_Cursor";
+    #size = 32;
+    #path = "${pkgs.posy-cursors}/share/icons";
+  };
 
-      nix.settings = {
-        substituters = [ "https://noctalia.cachix.org" ];
-        trusted-public-keys = [ "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" ];
-      };
-    };
+  nix.settings = {
+    substituters = [ "https://noctalia.cachix.org" ];
+    trusted-public-keys = [ "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" ];
   };
 }
