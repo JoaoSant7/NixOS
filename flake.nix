@@ -2,6 +2,7 @@
   description = "Backup NixOS";
 
   inputs = {
+
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
