@@ -10,6 +10,7 @@
     fd
     fzf
     git
+    gdu
     htop
     jq
     poppler
