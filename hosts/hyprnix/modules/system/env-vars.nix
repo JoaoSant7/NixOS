@@ -25,12 +25,12 @@
 
     # Cursor
     #XCURSOR_THEME = "Bibata-Modern-Ice";
-    XCURSOR_THEME = "Posy_Cursor";
+    XCURSOR_THEME = "Posy_Cursor_Black";
     XCURSOR_SIZE = "32";
 
     # Hyprcursor
     #HYPRCURSOR_THEME = "Bibata-Modern-Ice";
-    HYPRCURSOR_THEME = "Posy_Cursor";
+    HYPRCURSOR_THEME = "Posy_Cursor_Black";
     HYPRCURSOR_SIZE = "32";
   };
 }
