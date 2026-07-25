@@ -6,6 +6,7 @@
     distroshelf
     file-roller
     flameshot
+    libreoffice
     loupe
     sioyek
     syncthing
