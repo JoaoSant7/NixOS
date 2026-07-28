@@ -5,7 +5,6 @@
     ./hardware-configuration.nix
     ./modules/desktop
     ./modules/hardware
-    ./modules/home-manager.nix
     ./modules/pkgs
     ./modules/services
     ./modules/hardware
