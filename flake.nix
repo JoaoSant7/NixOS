@@ -2,7 +2,6 @@
   description = "Backup NixOS";
 
   inputs = {
-
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
@@ -23,7 +22,6 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
   };
 
   outputs =
@@ -43,9 +41,17 @@
           };
 
           modules = [
-            nix-flatpak.nixosModules.nix-flatpak
-            home-manager.nixosModules.home-manager
             ./hosts/hyprnix/configuration.nix
+            nix-flatpak.nixosModules.nix-flatpak
+            home-manager.nixosModules.default
+
+            {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                users.pedro = ./hosts/hyprnix/modules/home.nix;
+              };
+            }
           ];
         };
       };
