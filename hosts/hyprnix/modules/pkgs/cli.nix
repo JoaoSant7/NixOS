@@ -10,6 +10,7 @@
     fd
     fzf
     git
+    ghostty
     gdu
     htop
     jq

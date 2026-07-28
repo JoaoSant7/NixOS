@@ -2,7 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-    ghostty
     distroshelf
     file-roller
     flameshot
