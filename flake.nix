@@ -5,6 +5,11 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
+    home-manager = {
+      url = "github:nix-community/home-manager/release-26.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nix-flatpak = {
       url = "github:gmodena/nix-flatpak?ref=latest";
     };
@@ -18,42 +23,46 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    home-manager = {
-      url = "github:nix-community/home-manager/release-26.05";
+    mangowm = {
+      url = "github:mangowm/mango";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-  };
 
-  outputs =
-    inputs@{ self
-    , nixpkgs
-    , noctalia
-    , nix-flatpak
-    , home-manager
-    , ...
-    }: {
-      nixosConfigurations = {
-        hyprnix = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
+    outputs =
+      inputs@{ self
+      , nixpkgs
+      , nixpkgs-unstable
+      , noctalia
+      , nix-flatpak
+      , home-manager
+      , ...
+      }: {
+        nixosConfigurations = {
+          hyprnix = nixpkgs.lib.nixosSystem {
+            system = "x86_64-linux";
 
-          specialArgs = {
-            inherit inputs;
-          };
-
-          modules = [
-            ./hosts/hyprnix/configuration.nix
-            nix-flatpak.nixosModules.nix-flatpak
-            home-manager.nixosModules.default
-
-            {
-              home-manager = {
-                useGlobalPkgs = true;
-                useUserPackages = true;
-                users.pedro = ./hosts/hyprnix/modules/home.nix;
+            specialArgs = {
+              inherit inputs;
+              pkgs-unstable = import nixpkgs-unstable {
+                system = "x86_64-linux";
+                config.allowUnfree = true;
               };
-            }
-          ];
+            };
+
+            modules = [
+              ./hosts/hyprnix/configuration.nix
+              nix-flatpak.nixosModules.nix-flatpak
+              home-manager.nixosModules.default
+
+              {
+                home-manager = {
+                  useGlobalPkgs = true;
+                  useUserPackages = true;
+                  users.pedro = ./hosts/hyprnix/modules/home.nix;
+                };
+              }
+            ];
+          };
         };
       };
-    };
-}
+  }
