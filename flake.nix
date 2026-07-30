@@ -28,41 +28,43 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    outputs =
-      inputs@{ self
-      , nixpkgs
-      , nixpkgs-unstable
-      , noctalia
-      , nix-flatpak
-      , home-manager
-      , ...
-      }: {
-        nixosConfigurations = {
-          hyprnix = nixpkgs.lib.nixosSystem {
-            system = "x86_64-linux";
+  };
 
-            specialArgs = {
-              inherit inputs;
-              pkgs-unstable = import nixpkgs-unstable {
-                system = "x86_64-linux";
-                config.allowUnfree = true;
-              };
+  outputs =
+    inputs@{ self
+    , nixpkgs
+    , nixpkgs-unstable
+    , noctalia
+    , nix-flatpak
+    , home-manager
+    , ...
+    }: {
+      nixosConfigurations = {
+        hyprnix = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+
+          specialArgs = {
+            inherit inputs;
+            pkgs-unstable = import nixpkgs-unstable {
+              system = "x86_64-linux";
+              config.allowUnfree = true;
             };
-
-            modules = [
-              ./hosts/hyprnix/configuration.nix
-              nix-flatpak.nixosModules.nix-flatpak
-              home-manager.nixosModules.default
-
-              {
-                home-manager = {
-                  useGlobalPkgs = true;
-                  useUserPackages = true;
-                  users.pedro = ./hosts/hyprnix/modules/home.nix;
-                };
-              }
-            ];
           };
+
+          modules = [
+            ./hosts/hyprnix/configuration.nix
+            nix-flatpak.nixosModules.nix-flatpak
+            home-manager.nixosModules.default
+
+            {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                users.pedro = ./hosts/hyprnix/modules/home.nix;
+              };
+            }
+          ];
         };
       };
-  }
+    };
+}
