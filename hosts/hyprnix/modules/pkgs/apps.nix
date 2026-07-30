@@ -1,10 +1,7 @@
-{ pkgs, ... }:
-
+{ pkgs, pkgs-unstable, ... }:
 {
   environment.systemPackages = with pkgs; [
-    (brave.override {
-      commandLineArgs = [ "--password-store=basic" ];
-    })
+    pkgs-unstable.brave-origin
     discord
     obsidian
     mpv
