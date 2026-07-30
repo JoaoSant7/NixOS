@@ -15,10 +15,10 @@
     "image/svg+xml" = [ "org.gnome.Loupe.desktop" ];
     "image/*" = [ "org.gnome.Loupe.desktop" ];
 
-    "text/html" = "brave-browser.desktop";
-    "x-scheme-handler/http" = "brave-browser.desktop";
-    "x-scheme-handler/https" = "brave-browser.desktop";
-    "x-scheme-handler/about" = "brave-browser.desktop";
-    "x-scheme-handler/unknown" = "brave-browser.desktop";
+    "text/html" = "brave-origin.desktop";
+    "x-scheme-handler/http" = "brave-origin.desktop";
+    "x-scheme-handler/https" = "brave-origin.desktop";
+    "x-scheme-handler/about" = "brave-origin.desktop";
+    "x-scheme-handler/unknown" = "brave-origin.desktop";
   };
 }
