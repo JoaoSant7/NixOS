@@ -7,6 +7,6 @@
 
   programs.mango = {
     enable = true;
-    systemd.enable = true;
   };
+
 }
