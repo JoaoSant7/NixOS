@@ -8,5 +8,10 @@
     options = "--delete-older-than 15d";
   };
 
-  nix.optimise.automatic = true;
+  nix.settings.auto-optimise-store = true;
+
+  #nix.optimise.automatic = {
+  # enable = true;
+  # dates = "weekly";
+  #};
 }
