@@ -21,7 +21,7 @@
     # Qt
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     QT_QPA_PLATFORMTHEME = "qt6ct";
-    QT_QPA_PLATAFORM = "wayland";
+    QT_QPA_PLATFORM = "wayland";
 
     # Cursor
     #XCURSOR_THEME = "Bibata-Modern-Ice";
