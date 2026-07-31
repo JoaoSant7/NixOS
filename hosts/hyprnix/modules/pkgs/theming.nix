@@ -6,7 +6,7 @@
     sound-theme-freedesktop
     tela-icon-theme
     kdePackages.qt6ct
-    #kdePackages.qtsvg
+    libsForQt5.qt5.qtwayland
     kdePackages.qtwayland
   ];
 }
