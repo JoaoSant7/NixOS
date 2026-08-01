@@ -23,6 +23,9 @@
     QT_QPA_PLATFORMTHEME = "qt6ct";
     QT_QPA_PLATFORM = "wayland";
 
+    # hyprland-qt-support
+    QT_QUICK_CONTROLS_STYLE = "org.hyprland.style";
+
     # Cursor
     #XCURSOR_THEME = "Bibata-Modern-Ice";
     XCURSOR_THEME = "Posy_Cursor";
