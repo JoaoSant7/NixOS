@@ -22,7 +22,6 @@
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     QT_QPA_PLATFORMTHEME = "qt6ct";
     QT_QPA_PLATFORM = "wayland";
-    QT_QUICK_CONTROLS_STYLE = "org.kde.desktop";
 
     # Cursor
     #XCURSOR_THEME = "Bibata-Modern-Ice";
