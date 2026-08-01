@@ -9,6 +9,5 @@
     ./file-management.nix
     ./xdg-portal.nix
     ./printing.nix
-    ./sddm.nix
   ];
 }
