@@ -16,6 +16,7 @@
     jq
     poppler
     ripgrep
+    starship
     stow
     tealdeer
     tmux
@@ -28,15 +29,17 @@
     yt-dlp
     zip
     zoxide
-    zsh-powerlevel10k
+    #zsh-powerlevel10k
   ];
 
   # Cli tools.
   programs.zsh.enable = true;
-  programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+  #programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
   programs.neovim.enable = true;
   programs.bat.enable = true;
   programs.lazygit.enable = true;
+
+  programs.starship.enable = true;
 
   # fzf.
   programs.fzf.keybindings = true;
