@@ -27,13 +27,11 @@
     QT_QUICK_CONTROLS_STYLE = "org.hyprland.style";
 
     # Cursor
-    #XCURSOR_THEME = "Bibata-Modern-Ice";
-    XCURSOR_THEME = "Posy_Cursor";
-    XCURSOR_SIZE = "32";
+    XCURSOR_THEME = "Bibata-Modern-Ice";
+    XCURSOR_SIZE = "24";
 
     # Hyprcursor
-    #HYPRCURSOR_THEME = "Bibata-Modern-Ice";
-    HYPRCURSOR_THEME = "Posy_Cursor";
-    HYPRCURSOR_SIZE = "32";
+    HYPRCURSOR_THEME = "Bibata-Modern-Ice";
+    HYPRCURSOR_SIZE = "24";
   };
 }
