@@ -14,7 +14,7 @@
       common.default = [ "hyprland" "gtk" ];
 
       hyprland.default = [ "hyprland" "gtk" ];
-      hyprland."org.freedesktop.impl.portal.FileChooser" = [ "kde" ];
+      hyprland."org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
     };
 
     xdgOpenUsePortal = false;
