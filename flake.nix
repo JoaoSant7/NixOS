@@ -40,7 +40,7 @@
     , ...
     }: {
       nixosConfigurations = {
-        hyprnix = nixpkgs.lib.nixosSystem {
+        gondor = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
 
           specialArgs = {
@@ -52,7 +52,7 @@
           };
 
           modules = [
-            ./hosts/hyprnix/configuration.nix
+            ./hosts/gondor/configuration.nix
             nix-flatpak.nixosModules.nix-flatpak
             home-manager.nixosModules.default
 
@@ -60,7 +60,7 @@
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
-                users.pedro = ./hosts/hyprnix/modules/home.nix;
+                users.pedro = ./hosts/gondor/modules/home.nix;
               };
             }
           ];
