@@ -1,11 +1,13 @@
 { pkgs, config, ... }:
 
 {
+  environment.sessionVariables = {
 
-  # NVIDIA env vars
-  GBM_BACKEND = "nvidia_drm";
-  LIBVA_DRIVER_NAME = "nvidia";
-  __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+    # NVIDIA env vars
+    GBM_BACKEND = "nvidia_drm";
+    LIBVA_DRIVER_NAME = "nvidia";
+    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+  };
 
   hardware.enableAllFirmware = true;
 
