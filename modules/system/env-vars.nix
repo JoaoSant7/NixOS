@@ -4,11 +4,6 @@
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
 
-    # NVIDIA
-    GBM_BACKEND = "nvidia_drm";
-    LIBVA_DRIVER_NAME = "nvidia";
-    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
-
     # Electron
     ELECTRON_OZONE_PLATFORM_HINT = "auto";
 

@@ -2,6 +2,11 @@
 
 {
 
+  # NVIDIA env vars
+  GBM_BACKEND = "nvidia_drm";
+  LIBVA_DRIVER_NAME = "nvidia";
+  __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+
   hardware.enableAllFirmware = true;
 
   # Load nvidia modules early in initrd
