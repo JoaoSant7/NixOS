@@ -3,13 +3,13 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./modules/desktop
-    ./modules/hardware
-    ./modules/pkgs
-    ./modules/services
-    ./modules/hardware
-    ./modules/system
-    ./modules/users.nix
+    ../../modules/desktop
+    ../../modules/hardware
+    ../../modules/pkgs
+    ../../modules/services
+    ../../modules/hardware
+    ../../modules/system
+    ../../modules/users.nix
   ];
 
   # Enable flakes.
