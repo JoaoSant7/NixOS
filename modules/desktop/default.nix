@@ -2,9 +2,9 @@
 
 {
   imports = [
-    ./wayland/hyprland.nix
+    ./window-managers/hyprland.nix
     ./input.nix
-    ./wayland/noctalia.nix
+    ./shell/noctalia.nix
     ./fonts.nix
   ];
 }
