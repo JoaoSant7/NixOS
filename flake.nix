@@ -60,7 +60,7 @@
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
-                users.pedro = ./modules/home.nix;
+                users.pedro = ./modules/home;
               };
             }
           ];
