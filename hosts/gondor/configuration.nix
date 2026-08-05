@@ -9,7 +9,7 @@
     ../../modules/services
     ../../modules/hardware
     ../../modules/system
-    ../../modules/users.nix
+    ../../base/user.nix
   ];
 
   # Enable flakes.
