@@ -19,7 +19,7 @@
     QT_QPA_PLATFORM = "wayland";
 
     # hyprland-qt-support
-    QT_QUICK_CONTROLS_STYLE = "org.hyprland.style";
+    QT_QUICK_CONTROLS_STYLE = "Fusion";
 
     # Cursor
     XCURSOR_THEME = "Bibata-Modern-Ice";
